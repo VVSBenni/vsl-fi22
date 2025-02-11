@@ -1,6 +1,6 @@
 import CryptoJS from 'crypto-js';
 
-const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+-=[]{}|;:\'",.<>?/`~ '.split('');
+const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzöäü0123456789!@#$%^&*()_+-=[]{}|;:\'",.<>?/`~ '.split('');
 let savedDecryptionSet = null;
 const decryptionSets = [];
 
