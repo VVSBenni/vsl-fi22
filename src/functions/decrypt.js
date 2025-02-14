@@ -1,6 +1,6 @@
 import CryptoJS from 'crypto-js';
 
-const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzöäü0123456789!@#$%^&*()_+-=[]{}|;:\'",.<>?/`~ €£¥¢©®™✓✔✗✘'.split('');
+const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzöäü0123456789!@#$%^&*()_+-=[]{}|;:\'",.<>?/`~ '.split('');
 let savedDecryptionSet = null;
 const decryptionSets = [];
 
@@ -27,7 +27,7 @@ function getDecryptionSet(index = 0) {
     return decryptionSets[index]?.set || savedDecryptionSet;
 }
 
-function decryptAll(text, index = 0) {
+function encryptAll(text, index = 0) {
     const decryptionSet = getDecryptionSet(index);
     let decryptedText = '';
 
@@ -39,7 +39,7 @@ function decryptAll(text, index = 0) {
     return decryptedText;
 }
 
-function encryptAll(text, index = 0) {
+function decryptAll(text, index = 0) {
     const decryptionSet = getDecryptionSet(index);
     const encryptionSet = Object.fromEntries(Object.entries(decryptionSet).map(([key, value]) => [value, key]));
     let encryptedText = '';

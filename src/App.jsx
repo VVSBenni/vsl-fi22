@@ -21,10 +21,8 @@ function App() {
   function handleClick(action) {
     if (selectedMethod === "OWN") {
       if (action === "decrypt") {
-        console.log("DECRYPT")
         setExportValue(decryptAll(importValue, selectedSet))
       } else if (action === "encrypt") {
-        console.log("ENCRYPT")
         setExportValue(encryptAll(importValue, selectedSet))
       }
     } else if (selectedMethod === "SHA256" || selectedMethod === "SHA512") {
