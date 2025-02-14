@@ -1,4 +1,4 @@
-# Dokumentation des Decrypt-Moduls
+# Dokumentation
 
 Dieses Modul bietet Funktionen zur Verschlüsselung und Entschlüsselung unter Verwendung eines zufällig generierten Entschlüsselungssatzes sowie Funktionen zur Generierung von SHA256- und SHA512-Hashes.
 
